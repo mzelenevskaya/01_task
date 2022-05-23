@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01_task</title>
+    <link
+      rel="preconnect"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__logo">
+            <a href="#" class="header__logo-link">
+              <img src="./assets/image/svg/logomini.svg" alt="logomini">
+            </a>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item"><a href="#" class="header__link">features</a></li>
+              <li class="header__item"><a href="#" class="header__link">About</a></li>
+              <li class="header__item"><a href="#" class="header__link">Pricing</a></li>
+              <li class="header__item"><a href="#" class="header__link">Reviews</a></li>
+              <li class="header__item"><a href="#" class="header__link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>    
+      </div>
+      </header>
+
+      <!-- promo -->
+      <section class="promo">
+        <div class="container">
+          <div class="promo__wrapper">
+          <div class="promo-content col-7">
+            <img src="./assets/image/png/logo.png" alt="logo" class="promo-content__img">
+            <h1 class="promo-content__title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
+            <p class="promo-content__text">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit</p>
+            <a class="promo-content__button prime-btn" href="#">Download</a>
+          </div>
+          <div class="promo-input col-5">
+          <form class="promo-form" action="" method="post">
+            <p class="promo-form__title">Try Your <span>FREE</span> Trial Today</p>
+            <input type="text" id="name" name="Name" placeholder="Name">
+            <input type="email" id="mail" name="Email" placeholder="Email">
+            <input type="password" id="password" name="Password" placeholder="Password">
+            <button class="promo-form__button" type="submit">Get Started</button>
+          </form>
+        </div>
+        </div>
+      </div>
+      </section>   
+
+    <!-- section socials -->
+    <section class="socials">
+      <div class="container">
+        <div class="socials-head row">
+          <div class="socials-info col-5">
+            <h2 class="socials-info__title">Social Media</h2>
+            <p class="socials-info__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet.
+            </p>
+          </div>
+          <ul class="socials-head__links col-7">
+            <li class="socials-head__link">
+              <a href="#">
+                <img src="./assets/image/svg/facebook.svg" alt="facebook" />
+              </a>
+            </li>
+            <li class="socials-head__link">
+              <a href="#">
+                <img src="./assets/image/svg/twitter.svg" alt="twitter" />
+              </a>
+            </li>
+            <li class="socials-head__link">
+              <a href="#">
+                <img src="./assets/image/svg/linkedin.svg" alt="linkedin" />
+              </a>
+            </li>
+            <li class="socials-head__link">
+              <a href="#">
+                <img src="./assets/image/svg/pinterest.svg" alt="pinterest" />
+              </a>
+            </li>
+            <li class="socials-head__link">
+              <a href="#">
+                <img src="./assets/image/svg/instagram.svg" alt="instagram" />
+              </a>
+            </li>
+            <li class="socials-head__link">
+              <a href="#">
+                <img src="./assets/image/svg/github.svg" alt="github" />
+              </a>
+            </li>
+            <li class="socials-head__link">
+              <a href="#">
+                <img src="./assets/image/svg/rss.svg" alt="rss" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- section history -->
+    <section class="history">
+      <div class="container">
+        <div class="tabs">
+          <button class="tab__item tab__item_active col-2" onclick="openCity(event, 'tab_01')">tab 1</button>
+          <button class="tab__item col-2" onclick="openCity(event, 'tab_02')">tab 2</button>
+          <button class="tab__item col-2" onclick="openCity(event, 'tab_03')">tab 3</button>
+        </div>
+          <div id="tab_01" class="history__content history__content_show">
+            <div class="history-info">
+              <div class="history-info__description">
+                <h3 class="history-info__title">
+                  Tabs with soft transitioning effect.
+                </h3>
+                <div class="history-info__text">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenean euismod <br /> bibendum laoreet. Proin gravida dolor sit amet lacus accumsan
+                    et viverra
+                    <br />
+                    justo commodo. Proin sodales pulvinar tempor. Cum sociis
+                    natoque penatibus et magnis dis parturient montes.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenean
+                    <br />
+                    euismod
+                    <br />
+                    bibendum laoreet.
+                  </p>
+                </div>                
+                <a class="history-info__button prime-btn" href="#">Download</a>
+              </div>            
+              <div class="history-info__image">
+                <img src="./assets/image/jpg/rectangle.jpg" alt="rectangle" />
+              </div>
+            </div>
+          </div>
+          <div id="tab_02" class="history__content">
+            <div class="history-info">
+              <div class="history-info__description">
+                <h3 class="history-info__title">
+                  Tab 2
+                </h3>                
+            </div>            
+          </div>
+        </div> 
+          <div id="tab_03" class="history__content">
+            <div class="history-info">
+              <div class="history-info__description">
+                <h3 class="history-info__title">
+                  Tab 3
+                </h3>                
+            </div>            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section features -->
+    <section class="features">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-head__title">WHY THIS IS AWESOME</h2>
+          <p class="section-head__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="features__cards row">
+          <div class="features-card col-4">
+            <div class="features-card__img">
+              <img src="./assets/image/png/lamp.png" alt="chair" />
+            </div>
+            <p class="features-card__title">Thoughtful Design</p>
+            <p class="features-card__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accumsan et viverra.
+            </p>
+          </div>
+          <div class="features-card col-4">
+            <div class="features-card__img">
+              <img src="./assets/image/png/keyboard.png" alt="keyboard" />
+            </div>
+            <p class="features-card__title">Thoughtful Design</p>
+            <p class="features-card__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accumsan et viverra.
+            </p>
+          </div>
+          <div class="features-card col-4">
+            <div class="features-card__img">
+              <img src="./assets/image/png/lightning.png" alt="lightning" />
+            </div>
+            <p class="features-card__title">Thoughtful Design</p>
+            <p class="features-card__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accumsan et viverra.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section pricing -->
+    <section class="pricing">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-head__title">pricing options</h2>
+          <p2 class="section-head__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p2>
+        </div>
+        <div class="pricing__row row">
+          <div class="pricing-card col-4">
+            <h3 class="pricing-card__title">Basic</h3>
+            <p class="pricing-card__price">$10</p>
+            <p class="pricing-card__text">Free for life</p>
+            <ul class="pricing-card__list">
+              <li class="pricing-card__list-item">1 gb of space</li>
+              <li class="pricing-card__list-item">1 gb of space</li>
+              <li class="pricing-card__list-item">1 gb of space</li>
+              <li class="pricing-card__list-item">1 gb of space</li>
+              <li class="pricing-card__list-item">1 gb of space</li>
+              <li class="pricing-card__list-item">1 gb of space</li>
+            </ul>
+          </div>
+          <div class="pricing-card col-4">
+            <h3 class="pricing-card__title">Optima</h3>
+            <p class="pricing-card__price">$20</p>
+            <p class="pricing-card__text">Free for life</p>
+            <ul class="pricing-card__list">
+              <li class="pricing-card__list-item">1 gb of space</li>
+              <li class="pricing-card__list-item">1 gb of space</li>
+              <li class="pricing-card__list-item">1 gb of space</li>
+              <li class="pricing-card__list-item">1 gb of space</li>
+              <li class="pricing-card__list-item">1 gb of space</li>
+              <li class="pricing-card__list-item">1 gb of space</li>
+            </ul>
+          </div>
+          <div class="pricing-card col-4">
+            <h3 class="pricing-card__title">Pro</h3>
+            <p class="pricing-card__price">$30</p>
+            <p class="pricing-card__text">Free for life</p>
+            <ul class="pricing-card__list">
+              <li class="pricing-card__list-item">1 gb of space</li>
+              <li class="pricing-card__list-item">1 gb of space</li>
+              <li class="pricing-card__list-item">1 gb of space</li>
+              <li class="pricing-card__list-item">1 gb of space</li>
+              <li class="pricing-card__list-item">1 gb of space</li>
+              <li class="pricing-card__list-item">1 gb of space</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section reviews -->
+    <section class="reviews">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-head__title">what our customers are saying</h2>
+          <p class="section-head__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="reviews__row row">
+          <div class="reviews-card col-4">
+            <p class="reviews-card__feedback">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloribus accusamus expedita repellat similique odio aspernatur
+              ex, architecto eaque quo suscipit.
+            </p>
+            <div class="reviews-card__author">
+              <div class="reviews-card__author-img">
+                <img src="./assets/image/png/author1.png" alt="author1" />
+              </div>
+              <div class="reviews-card__author-info">
+                <p class="reviews-card__author-name">Davis Rhiel Madsen</p>
+                <p class="reviews-card__author-work">Manager</p>
+              </div>
+            </div>
+          </div>
+          <div class="reviews-card col-4">
+            <p class="reviews-card__feedback">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloribus accusamus expedita repellat similique odio aspernatur
+              ex, architecto eaque quo suscipit.
+            </p>
+            <div class="reviews-card__author">
+              <div class="reviews-card__author-img">
+                <img src="./assets/image/png/author2.png" alt="author2" />
+              </div>
+              <div class="reviews-card__author-info">
+                <p class="reviews-card__author-name">Jaydon Rosser</p>
+                <p class="reviews-card__author-work">Manager</p>
+              </div>
+            </div>
+          </div>
+          <div class="reviews-card col-4">
+            <p class="reviews-card__feedback">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloribus accusamus expedita repellat similique odio aspernatur
+              ex, architecto eaque quo suscipit.
+            </p>
+            <div class="reviews-card__author">
+              <div class="reviews-card__author-img">
+                <img src="./assets/image/png/author3.png" alt="author3" />
+              </div>
+              <div class="reviews-card__author-info">
+                <p class="reviews-card__author-name">Cooper Dorwart</p>
+                <p class="reviews-card__author-work">Manager</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section call-to-action -->
+    <section class="call-to-action">
+      <div class="container">
+        <div class="section-head section-head_light call-to-action__head">
+          <h2 class="section-head__title">STYLISH AXURE DESIGN</h2>
+          <p class="section-head__text">
+            Use the sections you need, remove the ones you don't. Create
+            gorgeous prototypes faster than ever!
+          </p>
+        </div>
+        <a class="call-to-action__button outline-btn" href="#">Download</a>
+      </div>
+    </section>  
+
+    <!-- section contact -->
+    <section class="contact">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-head__title">contact us</h2>
+          <p class="section-head__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="contact__wrapper">
+        <div class="contact-input col-6">
+          <form class="contact-form" action="" method="post">
+            <input type="text" id="name" name="Name" placeholder="Name">
+            <input type="email" id="mail" name="Email" placeholder="Email">
+            <input type="password" id="password" name="Password" placeholder="Password">
+          </form>
+        </div>
+        <div class="contact-input col-6">
+          <textarea rows="10" cols="45" name="Message">Message</textarea> 
+        </div>
+      </div>
+        <a class="contact__button outline-btn" href="#">Send Message</a>
+      </div>
+    </section>   
+
+
+
+    <script src="./js/script.js"></script>  
+  </body>
+</html>
