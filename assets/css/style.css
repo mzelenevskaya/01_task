@@ -21,14 +21,14 @@ img {
 body {
     margin: 0;
     font-family: 'Raleway';
-    color: var(--gray);
+    /* color: var(--gray); */
     font-weight: 400;
     font-size: 18px;  
     line-height: 1.2;
 }
 
 :root {
-    --black: #000000;
+    /* --black: #000000;
     --black-lite: #333333;  
     --gray: #86878B;
     --gray-lite: #C6CBCD;
@@ -37,7 +37,7 @@ body {
     --pink: #EC7979;    
     --pink-lite: #F8EFEF;
     --white: #FFFFFF; 
-    --white-lite: #F5F5F5; 
+    --white-lite: #F5F5F5;  */
     --content-width: 1170px;
     --mobile-padding: 15px;
     --gatter: 15px;
@@ -85,15 +85,15 @@ body {
     display: inline-block;    
     max-width: 270px; 
     width: 100%;
-    background-color: var(--pink);      
-    color: var(--white);  
+    /* background-color: var(--pink);      
+    color: var(--white);   */
     font-family: 'Open Sans';
     font-weight: 600;
     font-size: 18px;
     line-height: 1.2;
     text-align: center;  
     text-decoration: none;     
-    border: 2px solid var(--pink);  
+    /* border: 2px solid var(--pink);   */
     padding: 20px 0;  
 }
 
@@ -101,13 +101,13 @@ body {
     display: inline-block;    
     max-width: 370px; 
     width: 100%;      
-    color: var(--white);   
+    /* color: var(--white);    */
     font-family: 'Open Sans';
     font-weight: 600;
     font-size: 18px;
     line-height: 1.2;
     text-decoration: none;     
-    border: 2px solid var(--white);  
+    /* border: 2px solid var(--white);   */
     padding: 20px 0;  
 }
 /* ----------------------------------------------- */
@@ -119,7 +119,7 @@ body {
 
 .section-head__title {
     position: relative;
-    color: var(--black);
+    /* color: var(--black); */
     font-family: 'Raleway';
     font-weight: 400;
     font-size: 36px;
@@ -131,7 +131,7 @@ body {
 .section-head__title::after { 
     content: "";
     position: absolute; 
-    border-bottom: 1px solid var(--pink);
+    /* border-bottom: 1px solid var(--pink); */
     width: 170px;    
     top: 50%;  
     left: 50%; 
@@ -140,7 +140,7 @@ body {
 }
 
 .section-head__text {
-    color: var(--gray);
+    /* color: var(--gray); */
     font-family: 'Raleway';
     font-weight: 400;
     font-size: 18px;
@@ -149,15 +149,15 @@ body {
 
 
 .section-head_light .section-head__title {
-    color: var(--white); 
+    /* color: var(--white);  */
 }
 
 .section-head_light .section-head__title::after {
-    border-bottom: 1px solid var(--white);        
+    /* border-bottom: 1px solid var(--white);         */
 }
 
 .section-head_light .section-head__text {
-    color: var(--white);  
+    /* color: var(--white);   */
 } 
 /* ----------------------------------------------- */
 /* ---------------------header-------------------- */
@@ -166,7 +166,7 @@ body {
     top: 0;
     left: 0; 
     width: 100%;
-    background-color: var(--black);    
+    /* background-color: var(--black);     */
     z-index: 3;
 }
 
@@ -174,22 +174,28 @@ body {
     display: flex;  
     flex-wrap: wrap;
     align-items: center;    
-    justify-content: space-between;  
+    justify-content: space-between;     
+}
+
+.header__nav {
+    margin-left: auto;
+    margin-right: 50px; 
 }
 
 .header__list {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    padding: 20px 0;
+    padding: 20px 0;    
 }
 
 .header__item {
-    margin-right: 50px;    
+    margin-right: 50px;     
 }
 
-.header__item:last-child {
-    margin-right: 0;    
+
+.header__item:last-child {    
+    margin-right: 0;        
 }
 
 .header__link {
@@ -197,12 +203,20 @@ body {
     font-weight: 600;
     font-size: 14px;
     line-height: 0.9;
-    color: var(--white); 
+    /* color: var(--white);  */
     text-decoration: none;
 }
 
 .header__link:hover, .header__link:focus, .header__link:active {
     opacity: .8;
+}
+
+.theme {    
+    cursor: pointer;    
+    padding: 5px;
+    /* background: var(--white);  */
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgba(39,38,40,0.4);    */
 }
 /* ----------------------------------------------- */
 /* ------------------section promo---------------- */
@@ -225,7 +239,7 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color:rgba(0, 0, 0, .5);
+	/* background-color:rgba(0, 0, 0, .5); */
     z-index: 0;    
 }
 
@@ -249,14 +263,14 @@ body {
     font-weight: 500;
     font-size: 48px;
     font-style: normal;    
-    color: var(--white); 
+    /* color: var(--white);  */
     padding-bottom: 97px;    
 }
 
 .promo-content__title::after { 
     content: "";
     position: absolute; 
-    border-bottom: 1px solid var(--white);
+    /* border-bottom: 1px solid var(--white); */
     width: 170px;     
     left: 0; 
     top: 80%;      
@@ -267,13 +281,13 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.2;    
-    color: var(--white); 
+    /* color: var(--white);  */
     padding-bottom: 42px;
 }
 
 .promo-content__button {   
     background: inherit;
-    border: 2px solid var(--white);  
+    /* border: 2px solid var(--white);   */
 }
 
 .promo-input {    
@@ -282,7 +296,7 @@ body {
 
 .promo-form {    
     height: 450px;
-    background-color: var(--white);  
+    /* background-color: var(--white);   */
     border-radius: 10px;
     text-align: center;  
     display: flex;
@@ -293,7 +307,7 @@ body {
     outline: none;
     border: none;
     padding: 16px 0;
-    border-bottom: 1px solid var(--gray-input);  
+    /* border-bottom: 1px solid var(--gray-input);   */
     margin: 0 50px;
     margin-bottom: 15px;    
 }
@@ -308,7 +322,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: .9;
-    color: var(--gray-input);  
+    /* color: var(--gray-input);   */
 }
 
 .promo-form__title {
@@ -317,14 +331,14 @@ body {
     font-weight: 700;
     font-size: 24px;
     line-height: 33px;
-    color: var(--black);
+    /* color: var(--black); */
     text-transform: uppercase;
     padding: 33px 0;
     margin-bottom: 45px;
 }
 
 .promo-form__title span {
-    color: var(--pink);
+    /* color: var(--pink); */
 }
 
 .promo-form__button {
@@ -333,8 +347,8 @@ body {
     font-size: 15px;
     line-height: .9;
     width: 100%;
-    color: var(--white);
-    background: var(--pink);
+    /* color: var(--white);
+    background: var(--pink); */
     border-radius: 0 0 10px 10px;
     padding: 22px 0;
     border: none;
@@ -343,11 +357,11 @@ body {
 /* ----------------------------------------------- */
 /* -----------------section socials--------------- */
 .socials {
-    background-color: var(--pink-lite);
+    /* background-color: var(--pink-lite); */
 }
 
 .socials-info__title {
-    color: var(--black-lite); 
+    /* color: var(--black-lite);  */
     font-family: 'Open Sans';
     font-weight: 700;
     font-size: 24px;
@@ -357,7 +371,7 @@ body {
 }
 
 .socials-info__text {
-    color: var(--gray);
+    /* color: var(--gray); */
     font-family: 'Raleway';
     font-weight: 400;
     font-size: 18px;
@@ -393,7 +407,7 @@ body {
     border: none;
     font: inherit;    
     background-color: transparent;   
-    color: var(--black-lite); 
+    /* color: var(--black-lite);  */
     font-family: 'Open Sans';
     font-weight: 400;
     font-size: 14px;
@@ -403,15 +417,15 @@ body {
 }
 
 .tab__item:active, .tab__item:focus, .tab__item_active {
-    border-top: 1px solid var(--gray-lite);
+    /* border-top: 1px solid var(--gray-lite);
     border-right: 1px solid var(--gray-lite);
     border-left: 1px solid var(--gray-lite); 
-    border-bottom: 2px solid var(--white); 
+    border-bottom: 2px solid var(--white);  */
     transform: translate(0%, 2%); 
 }
 
 .history__content {
-    border: 1px solid var(--gray-lite);  
+    /* border: 1px solid var(--gray-lite);   */
     display: none;    
 }
 
@@ -429,7 +443,7 @@ body {
 }
 
 .history-info__title {
-    color: var(--black);
+    /* color: var(--black); */
     font-family: 'Open Sans';
     font-weight: 700;
     font-size: 30px;
@@ -439,7 +453,7 @@ body {
 }
 
 .history-info__text {
-    color: var(--black);
+    /* color: var(--black); */
     font-family: 'Raleway';
     font-weight: 400;
     font-size: 18px;
@@ -476,7 +490,7 @@ body {
 
 .features-card__img {
     border-radius: 50%;
-    border: 1px solid var(--pink);
+    /* border: 1px solid var(--pink); */
     width: 92px;
     height: 92px;
     display: flex;
@@ -487,7 +501,7 @@ body {
 }
 
 .features-card__title {
-    color: var(--black);
+    /* color: var(--black); */
     font-family: 'Open Sans';
     font-weight: 700;
     font-size: 24px;
@@ -497,7 +511,7 @@ body {
 }
 
 .features-card__text {
-    color: var(--black);
+    /* color: var(--black); */
     font-family: 'Raleway';
     font-weight: 400;
     font-size: 18px;
@@ -524,9 +538,9 @@ body {
     font-weight: 700;
     font-size: 24px;
     line-height: 1.5;
-    color: var(--white);
+    /* color: var(--white);
     background-color: var(--black-lite);
-    border: 2px solid var(--white-lite);
+    border: 2px solid var(--white-lite); */
     padding: 13px 0;
 }
 
@@ -535,9 +549,9 @@ body {
     font-weight: 700;
     font-size: 36px;
     line-height: 2.2;
-    color: var(--white);
+    /* color: var(--white);
     background-color: var(--black-lite);
-    border: 2px solid var(--white-lite);
+    border: 2px solid var(--white-lite); */
     padding: 20px 0;
 }
 
@@ -546,9 +560,9 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.2;
-    color: rgba(255, 255, 255, 0.5);
+    /* color: rgba(255, 255, 255, 0.5);
     background-color: var(--black-lite);
-    border: 2px solid var(--white-lite);
+    border: 2px solid var(--white-lite); */
     padding: 15px 0;
 }
 
@@ -557,7 +571,7 @@ body {
 }
 
 .pricing-card__list-item {
-    border: 2px solid var(--white-lite);
+    /* border: 2px solid var(--white-lite); */
     padding: 15px 0;
 }
 /* ----------------------------------------------- */
@@ -573,8 +587,8 @@ body {
 
 .reviews-card__feedback {    
     position: relative;
-    color: var(--gray);
-    background-color: var(--gray-lite-bg);
+    /* color: var(--gray);
+    background-color: var(--gray-lite-bg); */
     font-family: 'Raleway';
     font-weight: 400;
     font-size: 18px;
@@ -591,7 +605,7 @@ body {
     left: 30px;
     bottom: -20px;
     border: 10px solid transparent;
-    border-top: 10px solid var(--gray-lite-bg);
+    /* border-top: 10px solid var(--gray-lite-bg); */
 }
 
 .reviews-card__author {
@@ -615,7 +629,7 @@ body {
 }
 
 .reviews-card__author-name {    
-    color: var(--black);
+    /* color: var(--black); */
     font-family: 'Open Sans';
     font-weight: 700;
     font-size: 24px;
@@ -625,7 +639,7 @@ body {
 }
 
 .reviews-card__author-work {
-    color: var(--black);
+    /* color: var(--black); */
     font-family: 'Raleway';
     font-weight: 400;
     font-size: 18px;
@@ -653,7 +667,7 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color:rgba(0, 0, 0, .5);
+	/* background-color:rgba(0, 0, 0, .5); */
 }
 
 .call-to-action__head {
@@ -689,7 +703,7 @@ body {
     outline: none;
     border: none;
     padding-bottom: 16px;
-    border-bottom: 1px solid var(--gray-input);      
+    /* border-bottom: 1px solid var(--gray-input);       */
     margin-bottom: 50px;    
 } 
 
@@ -703,7 +717,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: .9;
-    color: var(--gray-input);  
+    /* color: var(--gray-input);   */
 }
 
 .contact-input__message {  
@@ -713,23 +727,23 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: .9;
-    color: #BDBDBD;
+    /* color: #BDBDBD; */
     outline: none;
     border: none;    
     padding-bottom: 187px;
-    border-bottom: 1px solid var(--gray-input);  
+    /* border-bottom: 1px solid var(--gray-input);   */
     resize: none;   
 }
 
 .contact__button {
-    background-color: var(--pink);      
+    /* background-color: var(--pink);       */
     margin: 0 auto;
 }
 /* ----------------------------------------------- */
 /* ---------------------footer-------------------- */
 .footer {
     width: 100%;
-    background-color: var(--black);  
+    /* background-color: var(--black);   */
 }
 
 .footer_row {
@@ -767,6 +781,6 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.2;
-    color: rgba(255, 255, 255, 0.5);    
+    /* color: rgba(255, 255, 255, 0.5);     */
 }
 /* ----------------------------------------------- */

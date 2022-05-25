@@ -1,0 +1,242 @@
+body {
+    color: var(--gray);
+}
+
+:root {
+    --black: #000000;
+    --black-lite: #333333;  
+    --gray: #86878B;
+    --gray-lite: #C6CBCD;
+    --gray-input: #BDBDBD;
+    --gray-lite-bg: #E2E2E2;
+    --pink: #EC7979;    
+    --pink-lite: #F8EFEF;
+    --white: #FFFFFF; 
+    --white-lite: #F5F5F5; 
+    --content-width: 1170px;
+    --mobile-padding: 15px;
+    --gatter: 15px;
+}
+
+/* -------------------components------------------ */
+.prime-btn {
+    background-color: var(--pink);      
+    color: var(--white);  
+    border: 2px solid var(--pink);  
+}
+
+.outline-btn {
+    color: var(--white);           
+    border: 2px solid var(--white);   
+}
+/* ----------------------------------------------- */
+/* --------------section section-head------------- */
+.section-head__title {
+    color: var(--black);
+}
+
+.section-head__title::after { 
+    border-bottom: 1px solid var(--pink); 
+}
+
+.section-head__text {
+    color: var(--gray);
+}
+
+.section-head_light .section-head__title {
+    color: var(--white); 
+}
+
+.section-head_light .section-head__title::after {
+    border-bottom: 1px solid var(--white);        
+}
+
+.section-head_light .section-head__text {
+    color: var(--white);  
+} 
+/* ----------------------------------------------- */
+/* ---------------------header-------------------- */
+.header { 
+    background-color: var(--black);    
+}
+
+.header__link {
+    color: var(--white); 
+}
+
+.header__theme {    
+    background: var(--black); 
+    box-shadow: 0 0 10px rgba(39,38,40,0.4);   
+}
+/* ----------------------------------------------- */
+/* ------------------section promo---------------- */
+.promo::before {
+	background-color:rgba(0, 0, 0, .5);  
+}
+
+.promo-content__title {   
+    color: var(--white);  
+}
+
+.promo-content__title::after { 
+    border-bottom: 1px solid var(--white);   
+}
+
+.promo-content__text {    
+    color: var(--white); 
+}
+
+.promo-content__button {  
+    border: 2px solid var(--white);  
+}
+
+.promo-form {  
+    background-color: var(--white);  
+}
+
+.promo-form input {  
+    border-bottom: 1px solid var(--gray-input);     
+}
+
+.promo-form input::placeholder {  
+    color: var(--gray-input);  
+}
+
+.promo-form__title {
+    color: var(--black);
+}
+
+.promo-form__title span {
+    color: var(--pink);
+}
+
+.promo-form__button {
+    color: var(--white);
+    background: var(--pink);
+}
+/* ----------------------------------------------- */
+/* -----------------section socials--------------- */
+.socials {
+    background-color: var(--pink-lite);
+}
+
+.socials-info__title {
+    color: var(--black-lite); 
+}
+
+.socials-info__text {
+    color: var(--gray);
+}
+/* ----------------------------------------------- */
+/* -----------------section history--------------- */
+
+.tab__item {        
+    color: var(--black-lite);         
+}
+
+.tab__item:active, .tab__item:focus, .tab__item_active {
+    border-top: 1px solid var(--gray-lite);
+    border-right: 1px solid var(--gray-lite);
+    border-left: 1px solid var(--gray-lite); 
+    border-bottom: 2px solid var(--white);  
+}
+
+.history__content {
+    border: 1px solid var(--gray-lite);        
+}
+
+.history-info__title {
+    color: var(--black); 
+}
+
+.history-info__text {
+    color: var(--black);       
+}
+/* ----------------------------------------------- */
+/* ----------------section features--------------- */
+.features-card__img {    
+    border: 1px solid var(--pink);  
+}
+
+.features-card__title {
+    color: var(--black); 
+}
+
+.features-card__text {
+    color: var(--black);
+}    
+/* ----------------------------------------------- */
+/* -----------------section pricing--------------- */
+.pricing-card__title {
+    color: var(--white);
+    background-color: var(--black-lite);
+    border: 2px solid var(--white-lite);   
+}
+
+.pricing-card__price {
+    color: var(--white);
+    background-color: var(--black-lite);
+    border: 2px solid var(--white-lite);    
+}
+
+.pricing-card__text {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: var(--black-lite);
+    border: 2px solid var(--white-lite);
+}
+
+.pricing-card__list-item {
+    border: 2px solid var(--white-lite);   
+}
+/* ----------------------------------------------- */
+/* -----------------section reviews--------------- */
+.reviews-card__feedback {  
+    color: var(--gray);
+    background-color: var(--gray-lite-bg);
+}
+
+.reviews-card__feedback::after {    
+    border-top: 10px solid var(--gray-lite-bg);
+}
+
+.reviews-card__author-name {    
+    color: var(--black);    
+}
+
+.reviews-card__author-work {
+    color: var(--black);      
+}
+/* ----------------------------------------------- */
+/* -------------section call-to-action------------ */
+.call-to-action::before {
+	background-color:rgba(0, 0, 0, .5);
+}
+/* ----------------------------------------------- */
+/* -----------------section contact--------------- */
+
+.contact-form input {   
+    border-bottom: 1px solid var(--gray-input);           
+} 
+
+.contact-form input::placeholder {     
+    color: var(--gray-input);  
+}
+
+.contact-input__message {      
+    color: #BDBDBD;    
+    border-bottom: 1px solid var(--gray-input);        
+}
+
+.contact__button {
+    background-color: var(--pink);         
+}
+/* ----------------------------------------------- */
+/* ---------------------footer-------------------- */
+.footer {
+    background-color: var(--black);  
+}
+
+.footer-design__text {    
+    color: rgba(255, 255, 255, 0.5);    
+}
+/* ----------------------------------------------- */
