@@ -1,4 +1,5 @@
 // console.log();
+
 // tab
 function openCity(evt, target) {
     var i, history__content, tabs__item;
