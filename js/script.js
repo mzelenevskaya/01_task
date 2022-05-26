@@ -19,28 +19,15 @@ function openCity(evt, target) {
 }
 
 // theme
-let changeThemeButtons = document.querySelectorAll('.header__theme-changeTheme');
+const toggleSwitch = document.querySelector('.header__theme input[type="checkbox"]');
 
-changeThemeButtons.forEach(button => {
-    button.addEventListener('click', function () {
-        let theme = this.dataset.theme;
-        applyTheme(theme);
-    });
-});
-
-function applyTheme(themeName) {
-    document.querySelector('[title="theme"]').setAttribute('href', `./assets/css/theme-${themeName}.css`);
-    changeThemeButtons.forEach(button => {
-        button.style.display = 'block';
-    });
-    document.querySelector(`[data-theme="${themeName}"]`).style.display = 'none';
-    localStorage.setItem('theme', themeName);
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }    
 }
 
-let activeTheme = localStorage.getItem('theme'); 
-
-if(activeTheme === null || activeTheme === 'light') {
-    applyTheme('light');
-} else if (activeTheme === 'dark') {
-    applyTheme('dark');
-}
+toggleSwitch.addEventListener('change', switchTheme, false);
