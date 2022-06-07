@@ -23,32 +23,48 @@
       <div class="container">
         <div class="header__wrapper">
           <div class="header__logo">
-            <a href="#" class="header__logo-link">
+            <a href="#" onclick="return false;" class="header__logo-link">
               <img src="./assets/image/svg/logomini.svg" alt="logomini" />
             </a>
           </div>
+
           <nav class="header__nav">
-            <ul class="header__list">
-              <li class="header__item">
-                <a href="#" class="header__link">features</a>
-              </li>
-              <li class="header__item">
-                <a href="#" class="header__link">About</a>
-              </li>
-              <li class="header__item">
-                <a href="#" class="header__link">Pricing</a>
-              </li>
-              <li class="header__item">
-                <a href="#" class="header__link">Reviews</a>
-              </li>
-              <li class="header__item">
-                <a href="#" class="header__link">Contact</a>
-              </li>
-            </ul>
+            <ul class="header__menu">
+              <li class="header__menu-item header__menu_hassub"><a class="header__menu-link" href="#features">Features<span class="triangle"></span></a>
+                <ul class="header__menu-sub1">
+                  <li class="header__menu-sub1-item header__menu_hassub"><a class="header__menu-link" href="#" onclick="return false;">Feature 1<span class="triangle-vertical"></span></a>
+                    <ul class="header__menu-sub2">
+                        <li class="header__menu-sub2-item"><a class="header__menu-link" href="#" onclick="return false;">Feature 1</a></li>
+                        <li class="header__menu-sub2-item"><a class="header__menu-link" href="#" onclick="return false;">Feature 2</a></li>
+                        <li class="header__menu-sub2-item"><a class="header__menu-link" href="#" onclick="return false;">Feature 3</a></li>
+                        <li class="header__menu-sub2-item"><a class="header__menu-link" href="#" onclick="return false;">Feature 4</a></li>
+                        <li class="header__menu-sub2-item"><a class="header__menu-link" href="#" onclick="return false;">Feature 5</a></li>
+                    </ul>
+                </li>
+                    <li class="header__menu-sub1-item"><a class="header__menu-link" href="#" onclick="return false;">Feature 2</a></li>
+                    <li class="header__menu-sub1-item"><a class="header__menu-link" href="#" onclick="return false;">Feature 3</a></li>
+                    <li class="header__menu-sub1-item"><a class="header__menu-link" href="#" onclick="return false;">Feature 4</a></li>
+                    <li class="header__menu-sub1-item"><a class="header__menu-link" href="#" onclick="return false;">Feature 5</a></li>
+                    
+                </ul>
+            </li>
+            <li class="header__menu-item">
+              <a href="#history" class="header__menu-link">About</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#pricing" class="header__menu-link">Pricing</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#reviews" class="header__menu-link">Reviews</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#contact" class="header__menu-link">Contact</a>
+            </li>
+          </ul>
           </nav>
           <div class="header__theme">
             <label class="header__theme-switch" for="checkbox">
-              <input type="checkbox" id="checkbox" />
+              <input type="checkbox" id="checkbox"/>
               <div class="slider round"></div>
             </label>
           </div>
@@ -74,26 +90,48 @@
               <br />
               consectetur adipiscing elit
             </p>
-            <a class="promo-content__button prime-btn" href="#">Download</a>
+            <button id="myButton" class="promo-content__button prime-btn" type="submit">Download
+            </button>    
+            <div id="myModal" class="promo-content__modal">
+              <div class="promo-content__modal-content col-5">                
+              <form class="promo-form" action="" method="post">
+                <span class="promo-content__modal-close">&times;</span>
+                <p class="promo-form__title">Give us <span>YOUR</span> contacts!</p>  
+                <div class="promo-form__wrapper">                
+                <div class="promo-form__input">
+                  <input class="input-text" type="text" name="Name" placeholder="Name" />
+                </div>
+                <div class="promo-form__input">
+                  <input class="input-text" type="email" name="Email" placeholder="Email" />
+                </div>
+                <div class="promo-form__input">
+                  <input class="input-text" type="tel" name="tel" placeholder="Phone" />
+                </div>
+                </div>              
+                <div class="promo-form__button">
+                  <button class="button-text" type="submit">Send</button>
+                </div>             
+              </form>
+            </div>
           </div>
+          </div>   
           <div class="promo-input col-5">
             <form class="promo-form" action="" method="post">
-              <p class="promo-form__title">
-                Try Your
-                <span>FREE</span>
-                Trial Today
-              </p>
-              <input type="text" id="name" name="Name" placeholder="Name" />
-              <input type="email" id="mail" name="Email" placeholder="Email" />
-              <input
-                type="password"
-                id="password"
-                name="Password"
-                placeholder="Password"
-              />
-              <button class="promo-form__button" type="submit">
-                Get Started
-              </button>
+              <p class="promo-form__title">Try Your <span>FREE</span> Trial Today</p>  
+              <div class="promo-form__wrapper">                
+              <div class="promo-form__input">
+                <input class="input-text" type="text" name="Name" placeholder="Name" />
+              </div>
+              <div class="promo-form__input">
+                <input class="input-text" type="email" name="Email" placeholder="Email" />
+              </div>
+              <div class="promo-form__input">
+                <input class="input-text" type="password" name="Password" placeholder="Password" />
+              </div>
+              </div>              
+              <div class="promo-form__button">
+                <button class="button-text" type="submit">Get Started</button>
+              </div>             
             </form>
           </div>
         </div>
@@ -113,37 +151,37 @@
           </div>
           <ul class="socials-head__links col-7">
             <li class="socials-head__link">
-              <a href="#">
+              <a href="#" onclick="return false;">
                 <img src="./assets/image/svg/facebook.svg" alt="facebook" />
               </a>
             </li>
             <li class="socials-head__link">
-              <a href="#">
+              <a href="#" onclick="return false;">
                 <img src="./assets/image/svg/twitter.svg" alt="twitter" />
               </a>
             </li>
             <li class="socials-head__link">
-              <a href="#">
+              <a href="#" onclick="return false;">
                 <img src="./assets/image/svg/linkedin.svg" alt="linkedin" />
               </a>
             </li>
             <li class="socials-head__link">
-              <a href="#">
+              <a href="#" onclick="return false;">
                 <img src="./assets/image/svg/pinterest.svg" alt="pinterest" />
               </a>
             </li>
             <li class="socials-head__link">
-              <a href="#">
+              <a href="#" onclick="return false;">
                 <img src="./assets/image/svg/instagram.svg" alt="instagram" />
               </a>
             </li>
             <li class="socials-head__link">
-              <a href="#">
+              <a href="#" onclick="return false;">
                 <img src="./assets/image/svg/github.svg" alt="github" />
               </a>
             </li>
             <li class="socials-head__link">
-              <a href="#">
+              <a href="#" onclick="return false;">
                 <img src="./assets/image/svg/rss.svg" alt="rss" />
               </a>
             </li>
@@ -153,7 +191,7 @@
     </section>
 
     <!-- section history -->
-    <section class="history">
+    <section class="history" id="history">
       <div class="container">
         <div class="tabs">
           <button
@@ -195,7 +233,7 @@
                   bibendum laoreet.
                 </p>
               </div>
-              <a class="history-info__button prime-btn" href="#">Download</a>
+              <a class="history-info__button prime-btn" href="#" onclick="return false;">Download</a>
             </div>
             <div class="history-info__image">
               <img src="./assets/image/jpg/rectangle.jpg" alt="rectangle" />
@@ -224,7 +262,7 @@
     </section>
 
     <!-- section features -->
-    <section class="features">
+    <section class="features" id="features">
       <div class="container">
         <div class="section-head">
           <h2 class="section-head__title">WHY THIS IS AWESOME</h2>
@@ -271,7 +309,7 @@
     </section>
 
     <!-- section pricing -->
-    <section class="pricing">
+    <section class="pricing" id="pricing">
       <div class="container">
         <div class="section-head">
           <h2 class="section-head__title">pricing options</h2>
@@ -324,7 +362,7 @@
     </section>
 
     <!-- section reviews -->
-    <section class="reviews">
+    <section class="reviews" id="reviews">
       <div class="container">
         <div class="section-head">
           <h2 class="section-head__title">what our customers are saying</h2>
@@ -395,12 +433,12 @@
             gorgeous prototypes faster than ever!
           </p>
         </div>
-        <a class="call-to-action__button outline-btn" href="#">Download</a>
+        <a class="call-to-action__button outline-btn" href="#" onclick="return false;">Download</a>
       </div>
     </section>
 
     <!-- section contact -->
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="container">
         <div class="section-head">
           <h2 class="section-head__title">contact us</h2>
@@ -456,7 +494,7 @@
           <div class="footer-social">
             <ul class="footer-social__links">
               <li class="footer-social__link">
-                <a href="#">
+                <a href="#" onclick="return false;">
                   <svg
                     width="54"
                     height="54"
@@ -472,7 +510,7 @@
                 </a>
               </li>
               <li class="footer-social__link">
-                <a href="#">
+                <a href="#" onclick="return false;">
                   <svg
                     width="54"
                     height="54"
@@ -488,7 +526,7 @@
                 </a>
               </li>
               <li class="footer-social__link">
-                <a href="#">
+                <a href="#" onclick="return false;">
                   <svg
                     width="54"
                     height="54"
@@ -504,7 +542,7 @@
                 </a>
               </li>
               <li class="footer-social__link">
-                <a href="#">
+                <a href="#" onclick="return false;">
                   <svg
                     width="54"
                     height="54"
@@ -520,7 +558,7 @@
                 </a>
               </li>
               <li class="footer-social__link">
-                <a href="#">
+                <a href="#" onclick="return false;">
                   <svg
                     width="54"
                     height="54"
@@ -540,7 +578,7 @@
                 </a>
               </li>
               <li class="footer-social__link">
-                <a href="#">
+                <a href="#" onclick="return false;">
                   <svg
                     width="54"
                     height="54"
@@ -558,7 +596,7 @@
                 </a>
               </li>
               <li class="footer-social__link">
-                <a href="#">
+                <a href="#" onclick="return false;">
                   <svg
                     width="54"
                     height="54"
