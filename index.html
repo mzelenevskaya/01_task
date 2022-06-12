@@ -18,67 +18,224 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
+
     <!-- header -->
     <header class="header">
-      <div class="container">
-        <div class="header__wrapper">
-          <div class="header__logo">
-            <a href="#" onclick="return false;" class="header__logo-link">
-              <img src="./assets/image/svg/logomini.svg" alt="logomini" />
-            </a>
-          </div>
-
-          <nav class="header__nav">
-            <ul class="header__menu">
-              <li class="header__menu-item header__menu_hassub"><a class="header__menu-link" href="#features">Features<span class="triangle"></span></a>
+        <div class="container">
+          <div class="header__wrapper">
+            <div class="header__logo">
+              <a href="/" class="header__logo-link">
+                <img src="./assets/image/header/logomini.svg" alt="logomini" />
+              </a>
+            </div>
+            <nav class="header__nav">
+              <ul class="header__menu">
+                <li class="header__menu-item header__menu_has-child">
+                  <a class="header__menu-link" href="#features">Features</a>
+                  <ul class="header__menu-sub1">
+                    <li class="header__menu-sub1-item header__menu-sub_has-child">
+                      <a class="header__menu-link" href="/">Feature 1</a>
+                      <ul class="header__menu-sub2">
+                          <li class="header__menu-sub2-item">
+                            <a class="header__menu-link" href="/">Feature 1</a>
+                          </li>                        
+                          <li class="header__menu-sub2-item">
+                            <a class="header__menu-link" href="/">Feature 2</a>
+                          </li>
+                          <li class="header__menu-sub2-item">
+                            <a class="header__menu-link" href="/">Feature 3</a>
+                          </li>
+                          <li class="header__menu-sub2-item">                          
+                            <a class="header__menu-link" href="/">Feature 4</a>
+                          </li>
+                          <li class="header__menu-sub2-item">
+                            <a class="header__menu-link" href="/">Feature 5</a>
+                          </li>
+                      </ul>
+                  </li>
+                      <li class="header__menu-sub1-item">
+                        <a class="header__menu-link" href="/">Feature 2</a>
+                      </li>
+                      <li class="header__menu-sub1-item">
+                        <a class="header__menu-link" href="/">Feature 3</a>
+                      </li>
+                      <li class="header__menu-sub1-item">
+                        <a class="header__menu-link" href="/">Feature 4</a>
+                      </li>
+                      <li class="header__menu-sub1-item">
+                        <a class="header__menu-link" href="/">Feature 5</a>
+                      </li>                    
+                  </ul>
+              </li>
+              <li class="header__menu-item header__menu_has-child">
+                <a class="header__menu-link" href="#history">About</a>
                 <ul class="header__menu-sub1">
-                  <li class="header__menu-sub1-item header__menu_hassub"><a class="header__menu-link" href="#" onclick="return false;">Feature 1<span class="triangle-vertical"></span></a>
+                  <li class="header__menu-sub1-item header__menu-sub_has-child">
+                    <a class="header__menu-link" href="/">About 1</a>
                     <ul class="header__menu-sub2">
-                        <li class="header__menu-sub2-item"><a class="header__menu-link" href="#" onclick="return false;">Feature 1</a></li>
-                        <li class="header__menu-sub2-item"><a class="header__menu-link" href="#" onclick="return false;">Feature 2</a></li>
-                        <li class="header__menu-sub2-item"><a class="header__menu-link" href="#" onclick="return false;">Feature 3</a></li>
-                        <li class="header__menu-sub2-item"><a class="header__menu-link" href="#" onclick="return false;">Feature 4</a></li>
-                        <li class="header__menu-sub2-item"><a class="header__menu-link" href="#" onclick="return false;">Feature 5</a></li>
+                        <li class="header__menu-sub2-item">
+                          <a class="header__menu-link" href="/">About 1</a>
+                        </li>                        
+                        <li class="header__menu-sub2-item">
+                          <a class="header__menu-link" href="/">About 2</a>
+                        </li>
+                        <li class="header__menu-sub2-item">
+                          <a class="header__menu-link" href="/">About 3</a>
+                        </li>
+                        <li class="header__menu-sub2-item">                          
+                          <a class="header__menu-link" href="/">About 4</a>
+                        </li>
+                        <li class="header__menu-sub2-item">
+                          <a class="header__menu-link" href="/">About 5</a>
+                        </li>
                     </ul>
                 </li>
-                    <li class="header__menu-sub1-item"><a class="header__menu-link" href="#" onclick="return false;">Feature 2</a></li>
-                    <li class="header__menu-sub1-item"><a class="header__menu-link" href="#" onclick="return false;">Feature 3</a></li>
-                    <li class="header__menu-sub1-item"><a class="header__menu-link" href="#" onclick="return false;">Feature 4</a></li>
-                    <li class="header__menu-sub1-item"><a class="header__menu-link" href="#" onclick="return false;">Feature 5</a></li>
-                    
+                    <li class="header__menu-sub1-item">
+                      <a class="header__menu-link" href="/">About 2</a>
+                    </li>
+                    <li class="header__menu-sub1-item">
+                      <a class="header__menu-link" href="/">About 3</a>
+                    </li>
+                    <li class="header__menu-sub1-item">
+                      <a class="header__menu-link" href="/">About 4</a>
+                    </li>
+                    <li class="header__menu-sub1-item">
+                      <a class="header__menu-link" href="/">About 5</a>
+                    </li>                    
                 </ul>
             </li>
-            <li class="header__menu-item">
-              <a href="#history" class="header__menu-link">About</a>
+            <li class="header__menu-item header__menu_has-child">
+                <a class="header__menu-link" href="#pricing">Pricing</a>
+                <ul class="header__menu-sub1">
+                  <li class="header__menu-sub1-item header__menu-sub_has-child">
+                    <a class="header__menu-link" href="/">Pricing 1</a>
+                    <ul class="header__menu-sub2">
+                        <li class="header__menu-sub2-item">
+                          <a class="header__menu-link" href="/">Pricing 1</a>
+                        </li>                        
+                        <li class="header__menu-sub2-item">
+                          <a class="header__menu-link" href="/">Pricing 2</a>
+                        </li>
+                        <li class="header__menu-sub2-item">
+                          <a class="header__menu-link" href="/">Pricing 3</a>
+                        </li>
+                        <li class="header__menu-sub2-item">                          
+                          <a class="header__menu-link" href="/">Pricing 4</a>
+                        </li>
+                        <li class="header__menu-sub2-item">
+                          <a class="header__menu-link" href="/">Pricing 5</a>
+                        </li>
+                    </ul>
+                </li>
+                    <li class="header__menu-sub1-item">
+                      <a class="header__menu-link" href="/">Pricing 2</a>
+                    </li>
+                    <li class="header__menu-sub1-item">
+                      <a class="header__menu-link" href="/">Pricing 3</a>
+                    </li>
+                    <li class="header__menu-sub1-item">
+                      <a class="header__menu-link" href="/">Pricing 4</a>
+                    </li>
+                    <li class="header__menu-sub1-item">
+                      <a class="header__menu-link" href="/">Pricing 5</a>
+                    </li>                    
+                </ul>
             </li>
-            <li class="header__menu-item">
-              <a href="#pricing" class="header__menu-link">Pricing</a>
+            <li class="header__menu-item header__menu_has-child">
+              <a class="header__menu-link" href="#reviews">Reviews</a>
+              <ul class="header__menu-sub1">
+                <li class="header__menu-sub1-item header__menu-sub_has-child">
+                  <a class="header__menu-link" href="/">Reviews 1</a>
+                  <ul class="header__menu-sub2">
+                      <li class="header__menu-sub2-item">
+                        <a class="header__menu-link" href="/">Reviews 1</a>
+                      </li>                        
+                      <li class="header__menu-sub2-item">
+                        <a class="header__menu-link" href="/">Reviews 2</a>
+                      </li>
+                      <li class="header__menu-sub2-item">
+                        <a class="header__menu-link" href="/">Reviews 3</a>
+                      </li>
+                      <li class="header__menu-sub2-item">                          
+                        <a class="header__menu-link" href="/">Reviews 4</a>
+                      </li>
+                      <li class="header__menu-sub2-item">
+                        <a class="header__menu-link" href="/">Reviews 5</a>
+                      </li>
+                  </ul>
+              </li>
+                  <li class="header__menu-sub1-item">
+                    <a class="header__menu-link" href="/">Reviews 2</a>
+                  </li>
+                  <li class="header__menu-sub1-item">
+                    <a class="header__menu-link" href="/">Reviews 3</a>
+                  </li>
+                  <li class="header__menu-sub1-item">
+                    <a class="header__menu-link" href="/">Reviews 4</a>
+                  </li>
+                  <li class="header__menu-sub1-item">
+                    <a class="header__menu-link" href="/">Reviews 5</a>
+                  </li>                    
+              </ul>
+          </li>
+          <li class="header__menu-item header__menu_has-child">
+            <a class="header__menu-link" href="#contact">Contact</a>
+            <ul class="header__menu-sub1">
+              <li class="header__menu-sub1-item header__menu-sub_has-child">
+                <a class="header__menu-link" href="/">Contact 1</a>
+                <ul class="header__menu-sub2">
+                    <li class="header__menu-sub2-item">
+                      <a class="header__menu-link" href="/">Contact 1</a>
+                    </li>                        
+                    <li class="header__menu-sub2-item">
+                      <a class="header__menu-link" href="/">Contact 2</a>
+                    </li>
+                    <li class="header__menu-sub2-item">
+                      <a class="header__menu-link" href="/">Contact 3</a>
+                    </li>
+                    <li class="header__menu-sub2-item">                          
+                      <a class="header__menu-link" href="/">Contact 4</a>
+                    </li>
+                    <li class="header__menu-sub2-item">
+                      <a class="header__menu-link" href="/">Contact 5</a>
+                    </li>
+                </ul>
             </li>
-            <li class="header__menu-item">
-              <a href="#reviews" class="header__menu-link">Reviews</a>
-            </li>
-            <li class="header__menu-item">
-              <a href="#contact" class="header__menu-link">Contact</a>
-            </li>
-          </ul>
-          </nav>
-          <div class="header__theme">
-            <label class="header__theme-switch" for="checkbox">
-              <input type="checkbox" id="checkbox"/>
-              <div class="slider round"></div>
-            </label>
+                <li class="header__menu-sub1-item">
+                  <a class="header__menu-link" href="/">Contact 2</a>
+                </li>
+                <li class="header__menu-sub1-item">
+                  <a class="header__menu-link" href="/">Contact 3</a>
+                </li>
+                <li class="header__menu-sub1-item">
+                  <a class="header__menu-link" href="/">Contact 4</a>
+                </li>
+                <li class="header__menu-sub1-item">
+                  <a class="header__menu-link" href="/">Contact 5</a>
+                </li>                    
+            </ul>
+        </li>
+            </ul>
+            </nav>
+            <div class="header__theme">
+              <label class="header__theme-switcher switcher" for="switcher__checkbox">
+                <input id="switcher__checkbox" type="checkbox"/>
+                <div class="switcher__slider switcher__slider_round"></div>
+              </label>
+            </div>
           </div>
         </div>
-      </div>
     </header>
 
-    <!-- promo -->
+    <!-- main -->
+    <main class="main">
+      <!-- promo -->
     <section class="promo">
       <div class="container">
-        <div class="promo__wrapper">
+        <div class="promo__row row">
           <div class="promo-content col-7">
             <img
-              src="./assets/image/png/logo.png"
+              src="./assets/image/promo/logo.png"
               alt="logo"
               class="promo-content__img"
             />
@@ -90,30 +247,9 @@
               <br />
               consectetur adipiscing elit
             </p>
-            <button id="myButton" class="promo-content__button prime-btn" type="submit">Download
+            <button id="myButton" class="promo-content__button outline-btn" type="submit">Download
             </button>    
-            <div id="myModal" class="promo-content__modal">
-              <div class="promo-content__modal-content col-5">                
-              <form class="promo-form" action="" method="post">
-                <span class="promo-content__modal-close">&times;</span>
-                <p class="promo-form__title">Give us <span>YOUR</span> contacts!</p>  
-                <div class="promo-form__wrapper">                
-                <div class="promo-form__input">
-                  <input class="input-text" type="text" name="Name" placeholder="Name" />
-                </div>
-                <div class="promo-form__input">
-                  <input class="input-text" type="email" name="Email" placeholder="Email" />
-                </div>
-                <div class="promo-form__input">
-                  <input class="input-text" type="tel" name="tel" placeholder="Phone" />
-                </div>
-                </div>              
-                <div class="promo-form__button">
-                  <button class="button-text" type="submit">Send</button>
-                </div>             
-              </form>
-            </div>
-          </div>
+            
           </div>   
           <div class="promo-input col-5">
             <form class="promo-form" action="" method="post">
@@ -130,7 +266,7 @@
               </div>
               </div>              
               <div class="promo-form__button">
-                <button class="button-text" type="submit">Get Started</button>
+                <button class="button-form prime-btn" type="submit">Get Started</button>
               </div>             
             </form>
           </div>
@@ -151,38 +287,38 @@
           </div>
           <ul class="socials-head__links col-7">
             <li class="socials-head__link">
-              <a href="#" onclick="return false;">
-                <img src="./assets/image/svg/facebook.svg" alt="facebook" />
+              <a href="/">
+                <img src="./assets/image/socials/facebook.svg" alt="facebook" />
               </a>
             </li>
             <li class="socials-head__link">
-              <a href="#" onclick="return false;">
-                <img src="./assets/image/svg/twitter.svg" alt="twitter" />
+              <a href="/">
+                <img src="./assets/image/socials/twitter.svg" alt="twitter" />
               </a>
             </li>
             <li class="socials-head__link">
-              <a href="#" onclick="return false;">
-                <img src="./assets/image/svg/linkedin.svg" alt="linkedin" />
+              <a href="/">
+                <img src="./assets/image/socials/linkedin.svg" alt="linkedin" />
               </a>
             </li>
             <li class="socials-head__link">
-              <a href="#" onclick="return false;">
-                <img src="./assets/image/svg/pinterest.svg" alt="pinterest" />
+              <a href="/">
+                <img src="./assets/image/socials/pinterest.svg" alt="pinterest" />
               </a>
             </li>
             <li class="socials-head__link">
-              <a href="#" onclick="return false;">
-                <img src="./assets/image/svg/instagram.svg" alt="instagram" />
+              <a href="/">
+                <img src="./assets/image/socials/instagram.svg" alt="instagram" />
               </a>
             </li>
             <li class="socials-head__link">
-              <a href="#" onclick="return false;">
-                <img src="./assets/image/svg/github.svg" alt="github" />
+              <a href="/">
+                <img src="./assets/image/socials/github.svg" alt="github" />
               </a>
             </li>
             <li class="socials-head__link">
-              <a href="#" onclick="return false;">
-                <img src="./assets/image/svg/rss.svg" alt="rss" />
+              <a href="/">
+                <img src="./assets/image/socials/rss.svg" alt="rss" />
               </a>
             </li>
           </ul>
@@ -193,27 +329,29 @@
     <!-- section history -->
     <section class="history" id="history">
       <div class="container">
-        <div class="tabs">
-          <button
-            class="tab__item tab__item_active col-2"
-            onclick="openCity(event, 'tab_01')"
+        <div class="tabs__inner">        
+        <div class="tabs__tab">
+          <button 
+            class="tabs__item" onclick="openCity(event, 'tab_01')"
           >
             tab 1
           </button>
-          <button class="tab__item col-2" onclick="openCity(event, 'tab_02')">
+          <button 
+          class="tabs__item" onclick="openCity(event, 'tab_02')">
             tab 2
           </button>
-          <button class="tab__item col-2" onclick="openCity(event, 'tab_03')">
+          <button 
+            class="tabs__item" onclick="openCity(event, 'tab_03')">
             tab 3
           </button>
         </div>
-        <div id="tab_01" class="history__content history__content_show">
-          <div class="history-info">
-            <div class="history-info__description">
-              <h3 class="history-info__title">
+        <div id="tab_01" class="tabs__card tabs__card_show">
+          <div class="tabs__card-inner">
+            <div class="tabs__card-info">
+              <h3 class="tabs__card-title">
                 Tabs with soft transitioning effect.
               </h3>
-              <div class="history-info__text">
+              <div class="tabs__card-text">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Aenean euismod
@@ -233,31 +371,80 @@
                   bibendum laoreet.
                 </p>
               </div>
-              <a class="history-info__button prime-btn" href="#" onclick="return false;">Download</a>
+              <a class="tabs__card-button prime-btn" href="/">Download</a>
             </div>
-            <div class="history-info__image">
-              <img src="./assets/image/jpg/rectangle.jpg" alt="rectangle" />
+            <div class="tabs__card-image">
+              <img class="tabs__card-pic" src="./assets/image/history/history1.jpg" alt="history1" />
             </div>
           </div>
         </div>
-        <div id="tab_02" class="history__content">
-          <div class="history-info">
-            <div class="history-info__description">
-              <h3 class="history-info__title">
-                Tab 2
+        <div id="tab_02" class="tabs__card">
+          <div class="tabs__card-inner">
+            <div class="tabs__card-info">
+              <h3 class="tabs__card-title">
+                Tabs with soft transitioning effect.
               </h3>
+              <div class="tabs__card-text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean euismod
+                  <br />
+                  bibendum laoreet. Proin gravida dolor sit amet lacus accumsan
+                  et viverra
+                  <br />
+                  justo commodo. Proin sodales pulvinar tempor. Cum sociis
+                  natoque penatibus et magnis dis parturient montes.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean
+                  <br />
+                  euismod
+                  <br />
+                  bibendum laoreet.
+                </p>
+              </div>
+              <a class="tabs__card-button prime-btn" href="/">Download</a>
+            </div>
+            <div class="tabs__card-image">
+              <img class="tabs__card-pic" src="./assets/image/history/history2.jpg" alt="history2" />
             </div>
           </div>
         </div>
-        <div id="tab_03" class="history__content">
-          <div class="history-info">
-            <div class="history-info__description">
-              <h3 class="history-info__title">
-                Tab 3
+        <div id="tab_03" class="tabs__card">
+          <div class="tabs__card-inner">
+            <div class="tabs__card-info">
+              <h3 class="tabs__card-title">
+                Tabs with soft transitioning effect.
               </h3>
+              <div class="tabs__card-text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean euismod
+                  <br />
+                  bibendum laoreet. Proin gravida dolor sit amet lacus accumsan
+                  et viverra
+                  <br />
+                  justo commodo. Proin sodales pulvinar tempor. Cum sociis
+                  natoque penatibus et magnis dis parturient montes.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean
+                  <br />
+                  euismod
+                  <br />
+                  bibendum laoreet.
+                </p>
+              </div>
+              <a class="tabs__card-button prime-btn" href="/">Download</a>
+            </div>
+            <div class="tabs__card-image">
+              <img class="tabs__card-pic" src="./assets/image/history/history3.jpg" alt="history3" />
             </div>
           </div>
-        </div>
+        </div> 
+      </div>
       </div>
     </section>
 
@@ -271,34 +458,34 @@
           </p>
         </div>
         <div class="features__cards row">
-          <div class="features-card col-4">
-            <div class="features-card__img">
-              <img src="./assets/image/png/lamp.png" alt="chair" />
+          <div class="feature-card col-4">
+            <div class="feature-card__img">
+              <img src="./assets/image/features/lamp.png" alt="chair" />
             </div>
-            <p class="features-card__title">Thoughtful Design</p>
-            <p class="features-card__text">
+            <p class="feature-card__title">Thoughtful Design</p>
+            <p class="feature-card__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
               euismod bibendum laoreet. Proin gravida dolor sit amet lacus
               accumsan et viverra.
             </p>
           </div>
-          <div class="features-card col-4">
-            <div class="features-card__img">
-              <img src="./assets/image/png/keyboard.png" alt="keyboard" />
+          <div class="feature-card col-4">
+            <div class="feature-card__img">
+              <img src="./assets/image/features/keyboard.png" alt="keyboard" />
             </div>
-            <p class="features-card__title">Thoughtful Design</p>
-            <p class="features-card__text">
+            <p class="feature-card__title">Thoughtful Design</p>
+            <p class="feature-card__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
               euismod bibendum laoreet. Proin gravida dolor sit amet lacus
               accumsan et viverra.
             </p>
           </div>
-          <div class="features-card col-4">
-            <div class="features-card__img">
-              <img src="./assets/image/png/lightning.png" alt="lightning" />
+          <div class="feature-card col-4">
+            <div class="feature-card__img">
+              <img src="./assets/image/features/lightning.png" alt="lightning" />
             </div>
-            <p class="features-card__title">Thoughtful Design</p>
-            <p class="features-card__text">
+            <p class="feature-card__title">Thoughtful Design</p>
+            <p class="feature-card__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
               euismod bibendum laoreet. Proin gravida dolor sit amet lacus
               accumsan et viverra.
@@ -311,7 +498,7 @@
     <!-- section pricing -->
     <section class="pricing" id="pricing">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head pricing__head">
           <h2 class="section-head__title">pricing options</h2>
           <p2 class="section-head__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -331,7 +518,7 @@
               <li class="pricing-card__list-item">1 gb of space</li>
             </ul>
           </div>
-          <div class="pricing-card col-4">
+          <div class="pricing-card pricing-card_active col-4">
             <h3 class="pricing-card__title">Optima</h3>
             <p class="pricing-card__price">$20</p>
             <p class="pricing-card__text">Free for life</p>
@@ -379,7 +566,7 @@
             </p>
             <div class="reviews-card__author">
               <div class="reviews-card__author-img">
-                <img src="./assets/image/png/author1.png" alt="author1" />
+                <img src="./assets/image/reviews/author1.png" alt="author1" />
               </div>
               <div class="reviews-card__author-info">
                 <p class="reviews-card__author-name">Davis Rhiel Madsen</p>
@@ -395,7 +582,7 @@
             </p>
             <div class="reviews-card__author">
               <div class="reviews-card__author-img">
-                <img src="./assets/image/png/author2.png" alt="author2" />
+                <img src="./assets/image/reviews/author2.png" alt="author2" />
               </div>
               <div class="reviews-card__author-info">
                 <p class="reviews-card__author-name">Jaydon Rosser</p>
@@ -411,7 +598,7 @@
             </p>
             <div class="reviews-card__author">
               <div class="reviews-card__author-img">
-                <img src="./assets/image/png/author3.png" alt="author3" />
+                <img src="./assets/image/reviews/author3.png" alt="author3" />
               </div>
               <div class="reviews-card__author-info">
                 <p class="reviews-card__author-name">Cooper Dorwart</p>
@@ -433,7 +620,7 @@
             gorgeous prototypes faster than ever!
           </p>
         </div>
-        <a class="call-to-action__button outline-btn" href="#" onclick="return false;">Download</a>
+        <a class="call-to-action__button outline-btn" href="/">Download</a>
       </div>
     </section>
 
@@ -446,55 +633,61 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
         </div>
-        <div class="contact__wrapper">
+        
+          <form class="contact__form" action="" method="post">
           <div class="contact__row row">
-            <div class="contact-input col-6">
-              <form class="contact-form" action="" method="post">
-                <input type="text" id="name" name="Name" placeholder="Name" />
-                <input
-                  type="email"
-                  id="mail"
-                  name="Email"
-                  placeholder="Email"
-                />
-                <input
-                  type="password"
-                  id="password"
-                  name="Password"
-                  placeholder="Password"
-                />
-              </form>
+            <div class="contact__form-list col-6">    
+              <div class="contact__form-item">
+                <input class="contact__form-input" type="text" id="name" name="Name" placeholder="Name" />                
+              </div> 
+              <div class="contact__form-item">
+                <input class="contact__form-input" type="email" id="mail" name="Email" placeholder="Email" />
+              </div>   
+              <div class="contact__form-item">
+                <input class="contact__form-input" type="password" id="password" name="Password" placeholder="Password" /> 
+              </div>   
             </div>
-            <div class="contact-input col-6">
-              <form class="contact-form" action="" method="post">
-                <textarea
-                  class="contact-input__message"
-                  cols="60"
-                  name="Message"
-                >
-                    Message
-                </textarea>
-              </form>
+            <div class="contact__form-list col-6">             
+                <textarea class="contact__form-message" name="Message">Message</textarea>              
             </div>
-          </div>
-          <input
-            class="contact__button outline-btn"
-            type="submit"
-            name="sendMessage"
-            value="Send Message"
-          />
-        </div>
-      </div>
+          </div>                     
+            <input class="contact__form-button outline-btn" type="submit" name="sendMessage" value="Send Message" />                   
+        </form>        
+      
     </section>
 
-    <!-- footer -->
+    <!-- modal -->
+    <div id="myModal" class="modal">
+      <div class="modal__content">                
+      <form class="modal-form" action="" method="post">
+        <span class="modal-form__close">&times;</span>
+        <p class="modal-form__title">Give us <span>YOUR</span> contacts!</p>  
+        <div class="modal-form__wrapper">                
+        <div class="modal-form__input">
+          <input class="input-text" type="text" name="Name" placeholder="Name" />
+        </div>
+        <div class="modal-form__input">
+          <input class="input-text" type="email" name="Email" placeholder="Email" />
+        </div>
+        <div class="modal-form__input">
+          <input class="input-text" type="tel" name="tel" placeholder="Phone" />
+        </div>
+        </div>              
+        <div class="modal-form__button">
+          <button class="button-text" type="submit">Send</button>
+        </div>             
+      </form>
+    </div>
+  </div>
+</main>
+
+<!-- footer -->
     <footer class="footer">
       <div class="container">
-        <div class="footer_row row">
-          <div class="footer-social">
-            <ul class="footer-social__links">
-              <li class="footer-social__link">
-                <a href="#" onclick="return false;">
+        <div class="footer_row row">          
+            <ul class="footer__links">
+              <li class="footer__link">
+                <a href="/">
                   <svg
                     width="54"
                     height="54"
@@ -509,8 +702,8 @@
                   </svg>
                 </a>
               </li>
-              <li class="footer-social__link">
-                <a href="#" onclick="return false;">
+              <li class="footer__link">
+                <a href="/">
                   <svg
                     width="54"
                     height="54"
@@ -525,8 +718,8 @@
                   </svg>
                 </a>
               </li>
-              <li class="footer-social__link">
-                <a href="#" onclick="return false;">
+              <li class="footer__link">
+                <a href="/">
                   <svg
                     width="54"
                     height="54"
@@ -541,8 +734,8 @@
                   </svg>
                 </a>
               </li>
-              <li class="footer-social__link">
-                <a href="#" onclick="return false;">
+              <li class="footer__link">
+                <a href="/">
                   <svg
                     width="54"
                     height="54"
@@ -557,8 +750,8 @@
                   </svg>
                 </a>
               </li>
-              <li class="footer-social__link">
-                <a href="#" onclick="return false;">
+              <li class="footer__link">
+                <a href="/">
                   <svg
                     width="54"
                     height="54"
@@ -577,8 +770,8 @@
                   </svg>
                 </a>
               </li>
-              <li class="footer-social__link">
-                <a href="#" onclick="return false;">
+              <li class="footer__link">
+                <a href="/">
                   <svg
                     width="54"
                     height="54"
@@ -595,8 +788,8 @@
                   </svg>
                 </a>
               </li>
-              <li class="footer-social__link">
-                <a href="#" onclick="return false;">
+              <li class="footer__link">
+                <a href="/">
                   <svg
                     width="54"
                     height="54"
@@ -615,15 +808,12 @@
                   </svg>
                 </a>
               </li>
-            </ul>
-          </div>
-          <div class="footer-design">
-            <p class="footer-design__text">© 2015 Axure Themes</p>
-          </div>
+            </ul> 
+            <p class="footer__copyright">© 2015 Axure Themes</p>          
         </div>
       </div>
     </footer>
 
-    <script src="./js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
